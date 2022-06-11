@@ -19,10 +19,53 @@
 		li {
 			font-style: 14px;
 			margin-right: 50px;
-			padding: 0;
+			padding: 7px;
+			padding: 5px 20px;
+			border-radius: 10px;
+			cursor: pointer;
 
 			&.active {
 				background-color: $mainColor;
+				color: white;
+			}
+		}
+	}
+
+	.container {
+		width: 70%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+		.item {
+			border-radius: 20px;
+			border: 1px solid lightgray;
+			margin: 10px 20px;
+			display: block;
+			width: 250px;
+			height: 150px;
+			overflow: hidden;
+			position: relative;
+			border-radius: 1px;
+			margin: 0 auto;
+
+			h3 {
+				position: absolute;
+				bottom: 10px;
+				font-size: 20px;
+				z-index: 1;
+			}
+		}
+
+		img {
+			width: 100%;
+			z-index: 2;
+			transition: all 10s ease;
+			margin: 0 auto;
+
+			&:hover {
+				transform: translateY(-85%);
 			}
 		}
 	}
