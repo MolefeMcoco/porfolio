@@ -1,0 +1,28 @@
+$primaryColor: #39b54a;
+$secondaryColor: #b539a4;
+$titleColor: #000;
+$textColor: #212529;
+$primaryBgColor: rgba(0, 0, 0, 0.91);
+$secondaryBgColor: #db6acb;
+
+$width-md: 991px;
+$width-sm: 768px;
+$width-xs: 480px;
+
+@mixin mobile-md {
+	@media (max-width: #{$width-md}) {
+		@content;
+	}
+}
+
+@mixin mobile-sm {
+	@media (max-width: #{$width-sm}) {
+		@content;
+	}
+}
+
+@mixin mobile-xs {
+	@media (max-width: #{$width-xs}) {
+		@content;
+	}
+}

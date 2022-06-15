@@ -1,0 +1,39 @@
+@import "../../global.scss";
+
+.pl {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.pl-texts {
+	width: 65%;
+	overflow: hidden;
+	padding: 20px 0px;
+
+	@include mobile-sm {
+		padding: 20px 0px;
+	}
+}
+
+.pl-title {
+	font-size: 50px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pl-list {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	overflow: hidden;
+
+	@include mobile-md {
+		width: 100%;
+	}
+}

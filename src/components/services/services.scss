@@ -1,0 +1,112 @@
+@import "../../global.scss";
+.services {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include mobile-sm {
+		flex-direction: column;
+	}
+
+	.left {
+		flex: 1;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include mobile-md {
+			flex: 2;
+			display: none;
+		}
+
+		.left-container {
+			width: 60%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 30vh;
+
+			a {
+				text-decoration: none;
+			}
+
+			button {
+				background-color: $primaryColor;
+				color: #fff;
+				display: flex;
+				flex-direction: row;
+				width: 100px;
+				justify-content: center;
+				align-items: center;
+				margin-top: 10px;
+				transition: all 0.5s ease;
+
+				&:hover {
+					background-color: black;
+				}
+			}
+		}
+	}
+	.right {
+		flex: 1;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 0px 0px 0px 250px;
+		background-color: $secondaryBgColor;
+
+		@include mobile-md {
+			flex: 3;
+			border-radius: unset;
+		}
+
+		@include mobile-xs {
+			flex-direction: column;
+			flex-wrap: nowrap;
+		}
+
+		.right-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			width: 80%;
+			height: 60vh;
+
+			@include mobile-md {
+				height: 55vh;
+			}
+
+			@include mobile-sm {
+				height: 70vh;
+			}
+
+			@include mobile-xs {
+				height: 80vh;
+				display: flex;
+			}
+
+			.item {
+				width: 40%;
+				margin: 10px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+
+				@include mobile-xs {
+					width: 95%;
+					display: column;
+				}
+
+				.icon {
+					padding: 10px;
+					margin-bottom: 10px;
+					width: 25px;
+				}
+			}
+		}
+	}
+}
