@@ -1,9 +1,18 @@
+@import "./global.scss";
 .app {
 	height: 100vh;
+	@include mobile-sm {
+		height: 100%;
+	}
 
 	.sections {
 		width: 100%;
 		height: calc(100vh - 70px);
+
+		@include mobile-sm {
+			height: 100%;
+			scroll-snap-type: none;
+		}
 
 		position: relative;
 		top: 70px;
@@ -18,6 +27,11 @@
 			width: 100vw;
 			height: calc(100vh - 70px);
 			scroll-snap-align: start;
+
+			@include mobile-sm {
+				height: 100%;
+				width: 100%;
+			}
 		}
 	}
 }

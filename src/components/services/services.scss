@@ -6,6 +6,8 @@
 
 	@include mobile-sm {
 		flex-direction: column;
+		background-color: $secondaryBgColor;
+		padding: 70px 0px;
 	}
 
 	.left {
@@ -17,7 +19,6 @@
 		align-items: center;
 		@include mobile-md {
 			flex: 2;
-			display: none;
 		}
 
 		.left-container {
@@ -26,6 +27,11 @@
 			flex-direction: column;
 			justify-content: space-between;
 			height: 30vh;
+
+			@include mobile-sm {
+				height: 15vh;
+				width: 75%;
+			}
 
 			a {
 				text-decoration: none;
@@ -45,6 +51,10 @@
 				&:hover {
 					background-color: black;
 				}
+
+				@include mobile-sm {
+					display: none;
+				}
 			}
 		}
 	}
@@ -63,11 +73,6 @@
 			border-radius: unset;
 		}
 
-		@include mobile-xs {
-			flex-direction: column;
-			flex-wrap: nowrap;
-		}
-
 		.right-container {
 			display: flex;
 			justify-content: space-between;
@@ -81,12 +86,7 @@
 			}
 
 			@include mobile-sm {
-				height: 70vh;
-			}
-
-			@include mobile-xs {
-				height: 80vh;
-				display: flex;
+				height: 100%;
 			}
 
 			.item {
@@ -96,9 +96,8 @@
 				flex-direction: column;
 				justify-content: space-between;
 
-				@include mobile-xs {
-					width: 95%;
-					display: column;
+				@include mobile-sm {
+					width: 100%;
 				}
 
 				.icon {
