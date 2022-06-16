@@ -5,7 +5,6 @@ const About = () => {
 	return (
 		<div className="a" id="about">
 			<div className="a-left">
-				<div className="a-card bg" />
 				<div className="a-card">
 					<img
 						src="https://images.pexels.com/photos/3585047/pexels-photo-3585047.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
@@ -16,20 +15,21 @@ const About = () => {
 			</div>
 			<div className="a-right">
 				<h1 className="a-title">About Me</h1>
-				<p className="a-sub">
-					It is a long established fact that a reader will be distracted by the readable content.
-				</p>
+				<p className="a-sub">Hi this is Molefe Mcoco</p>
 				<p className="a-desc">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat duis aute irure dolor in reprehende.
+					I'm a professional and highly skilled Web and Mobile App developer with more than 4 years of
+					experience in the field. i bring a range of skills from visual design, interaction design and UI. I
+					focus on creating user friendly design layouts and rich seamless experiences between the product and
+					the user.
 				</p>
 				<div className="a-award">
-					<img src={Award} alt="" className="a-award-img" />
-					<div className="a-award-texts">
-						<h4 className="a-award-title">International Design Awards 2021</h4>
-					</div>
+					<a href="https://www.bark.com/en/za/company/mm-web-design/mDeP8/">
+						<img src={Award} alt="" className="a-award-img" />
+					</a>
 				</div>
+				<a href="#contact" className="a-hire">
+					<button>Hire Me Now</button>
+				</a>
 			</div>
 		</div>
 	);

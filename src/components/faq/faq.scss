@@ -1,7 +1,13 @@
+@import "../../global.scss";
+
 .faq {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	@include mobile-sm {
+		flex-direction: column;
+	}
 
 	.left {
 		display: flex;
@@ -15,6 +21,7 @@
 	.right {
 		display: flex;
 		flex: 1;
+		margin: 0px 20px 50px 20px;
 	}
 }
 

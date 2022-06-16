@@ -3,7 +3,7 @@
 	width: 28%;
 	height: 30vh;
 	margin: 20px 10px;
-	border: 1px solid $secondaryColor;
+	border: 1px solid rgb(243, 242, 242);
 	border-radius: 10px 10px 0px 0px;
 	overflow: hidden;
 	position: relative;
@@ -33,11 +33,12 @@
 
 .p-browser {
 	height: 20px;
-	background-color: $secondaryColor;
+	background-color: rgb(211, 209, 209);
 	display: flex;
 	align-items: center;
 	position: sticky;
 	z-index: 2;
+	border-radius: 10px 10px 0px 0px;
 }
 
 .p-circle {
@@ -54,7 +55,7 @@
 }
 
 .p:hover .p-img {
-	transform: translateY(-100%);
+	transform: translateY(-85%);
 }
 
 .p-name {
@@ -65,9 +66,9 @@
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto;
-	background-color: $secondaryBgColor;
+	background-color: $primaryColor;
 	font-weight: 700;
-	color: #000;
+	color: #fff;
 	padding: 5px;
 	width: 100%;
 }

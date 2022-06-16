@@ -2,39 +2,31 @@ import React from 'react';
 import Faq from 'react-faq-component';
 import './faq.scss';
 import faqImage from '../../assets/faq.png';
+import '../../global.scss';
 
 const data = {
 	rows: [
 		{
-			title: 'Athena',
-			content: (
-				<ul>
-					<li>Nunc maximus, magna at ultricies elementum,Nunc maximus, magna at ultricies elementum </li>
-					<ul>
-						<li>Nunc maximus, magna at ultricies elementum </li>
-						<li>Nunc maximus, magna at ultricies elementum </li>
-						<li>Nunc maximus, magna at ultricies elementum </li>
-						<li>Nunc maximus, magna at ultricies elementum </li>
-						<li>Nunc maximus, magna at ultricies elementum </li>
-					</ul>
-				</ul>
-			)
-		},
-		{
-			title: 'Nunc maximus, magna at ultricies elementum',
+			title: 'How much is a website?',
 			content:
-				'Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.'
+				'this completely Depends on the size , pages and functionality of the website.I have packages I offer for popular website like online stores, informative and one page website or you can ask for a quote?'
 		},
 		{
-			title: 'Curabitur laoreet, mauris vel blandit fringilla',
-			content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-			Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-			Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-			Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `
+			title: 'How long does it take to build website?',
+			content: 'just like the cost . it  Depends on the size , pages and functionality of the website.'
 		},
 		{
-			title: 'What is the package version',
-			content: <p>current version is 1.2.1</p>
+			title: 'Can you help me with social media?',
+			content: `afraid not. I specialise in web design and development. `
+		},
+		{
+			title: 'What happens if I move my website to another web designer or agency?',
+			content: 'Your website is yours and you can freely move it if you like.'
+		},
+		{
+			title: 'what are terms of payment for designs and development of website?',
+			content:
+				'I like to work on a 30% upfront deposit and the outstanding 70% when the development has been completed and approved by client.'
 		}
 	]
 };
@@ -43,12 +35,12 @@ const styles = {
 	//  bgColor: 'white',
 	// titleTextColor: "blue",
 	//  titleTextSize: '48px',
-	// rowTitleColor: "blue",
+	rowTitleColor: '#39b54a',
 	//  rowTitleTextSize: 'medium',
 	//  rowContentColor: 'grey',
 	rowContentTextSize: '16px',
-	//  rowContentPaddingTop: '10px',
-	// rowContentPaddingBottom: "10px",
+	rowContentPaddingTop: '20px',
+	rowContentPaddingBottom: '20px',
 	// rowContentPaddingLeft: "10px",
 	// rowContentPaddingRight: "10px"
 	// arrowColor: "red",
