@@ -1,6 +1,6 @@
 import './portfolioList.scss';
 
-const PortfolioList = ({ img, link }) => {
+const PortfolioList = ({ img, link, name }) => {
 	return (
 		<div className="p">
 			<div className="p-browser">
@@ -10,6 +10,7 @@ const PortfolioList = ({ img, link }) => {
 			</div>
 			<a href={link} target="_blank" rel="noreferrer">
 				<img src={img} alt="" className="p-img" />
+				<p className="p-name">{name}</p>
 			</a>
 		</div>
 	);

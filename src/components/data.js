@@ -1,33 +1,38 @@
-export const all = [
+export const portfolioData = [
 	{
 		id: 1,
-		title: 'Brain Space',
-		img: 'https://www.mmwebdesign.co.za/assets/images/1.jpg'
+		img: 'https://www.mmwebdesign.co.za/assets/images/screen.jpg',
+		link: 'https://www.brainspacecreativity.co.za/',
+		name: 'Brain Space'
 	},
 	{
 		id: 2,
-		title: 'Trish Beauty Spa',
-		img: 'https://www.mmwebdesign.co.za/assets/images/2.jpg'
+		img: 'https://www.mmwebdesign.co.za/assets/images/screen2.jpg',
+		link: 'https://www.ecocompounds.co.za/',
+		name: 'Eco Compounds Furniture'
 	},
 	{
 		id: 3,
-		title: 'Rebel',
-		img: 'https://www.mmwebdesign.co.za/assets/images/3.jpg'
-	}
-];
-
-export const custom = [
+		img: 'https://www.mmwebdesign.co.za/assets/images/screen3.jpg',
+		link: 'https://molefemcoco.github.io/trish-beauty-spa/',
+		name: 'Trish Beaty Spa'
+	},
 	{
-		id: 1,
-		title: 'Eco',
-		img: 'https://www.mmwebdesign.co.za/assets/images/4.jpg'
-	}
-];
-
-export const wordpress = [
+		id: 4,
+		img: 'https://www.mmwebdesign.co.za/assets/images/screen4.jpg',
+		link: 'https://mmwebdesign.co.za/selftastic/',
+		name: 'Selftastic'
+	},
 	{
-		id: 1,
-		title: 'News',
-		img: 'https://www.mmwebdesign.co.za/assets/images/6.jpg'
+		id: 5,
+		img: 'https://www.mmwebdesign.co.za/assets/images/screen5.jpg',
+		link: 'https://mmwebdesign.co.za/sparrow-clothing/',
+		name: 'Sparrow Clothing'
+	},
+	{
+		id: 6,
+		img: 'https://www.mmwebdesign.co.za/assets/images/screen6.jpg',
+		link: 'https://mmwebdesign.co.za/real-key/',
+		name: 'Reall key communication'
 	}
 ];
