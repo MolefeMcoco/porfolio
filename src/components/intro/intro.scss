@@ -13,10 +13,6 @@
 		flex: 0.5;
 		overflow: hidden;
 
-		@include mobile-sm {
-			margin-top: 70px;
-		}
-
 		.imgContainer {
 			width: 700px;
 			height: 700px;
@@ -28,7 +24,7 @@
 			float: right;
 
 			@include mobile-sm {
-				width: 300px;
+				width: 200px;
 				height: auto;
 				align-items: flex-start;
 			}

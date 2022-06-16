@@ -19,6 +19,7 @@
 		align-items: center;
 		@include mobile-md {
 			flex: 2;
+			margin-bottom: 50px;
 		}
 
 		.left-container {
@@ -98,6 +99,7 @@
 
 				@include mobile-sm {
 					width: 100%;
+					margin-bottom: 50px;
 				}
 
 				.icon {

@@ -3,7 +3,7 @@
 	width: 28%;
 	height: 30vh;
 	margin: 20px 10px;
-	border: 2px solid $primaryColor;
+	border: 1px solid $secondaryColor;
 	border-radius: 10px 10px 0px 0px;
 	overflow: hidden;
 	position: relative;
@@ -20,9 +20,10 @@
 	}
 
 	@include mobile-xs {
-		width: 100%;
-		margin: 15px 10px;
-		height: 400px;
+		width: 85%;
+		margin: 0 auto;
+		height: 300px;
+		margin-bottom: 50px;
 
 		&:focus {
 			transform: translateY(-100%);
@@ -32,7 +33,7 @@
 
 .p-browser {
 	height: 20px;
-	background-color: $primaryColor;
+	background-color: $secondaryColor;
 	display: flex;
 	align-items: center;
 	position: sticky;
