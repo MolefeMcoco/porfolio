@@ -35,11 +35,14 @@ const Testimonials = () => {
 			<div className="container">
 				{data.map((d) => (
 					<div className={d.featured ? 'card featured' : 'card'}>
-						<div className="center">{d.desc}</div>
-						<div className="bottom">
+						<div className="image">
+							<img src={d.img} alt="" />
+						</div>
+						<div className="top">
 							<h3>{d.name}</h3>
 							<h4>{d.title}</h4>
 						</div>
+						<div className="bottom">{d.desc}</div>
 					</div>
 				))}
 			</div>

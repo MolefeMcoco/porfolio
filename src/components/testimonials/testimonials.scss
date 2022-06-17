@@ -4,20 +4,10 @@
 	background-color: white;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	text-align: center;
-
-	@include mobile-md {
-		justify-content: space-around;
-	}
-
-	h1 {
-		font-size: 50px;
-
-		@include mobile-md {
-			font-size: 20px;
-		}
-	}
+	width: 80%;
 
 	.container {
 		width: 100%;
@@ -27,106 +17,74 @@
 		justify-content: center;
 
 		@include mobile-sm {
+			display: flex;
+			align-items: center;
 			flex-direction: column;
-			height: 100%;
-		}
-
-		@include mobile-sm {
-			padding-top: 50px;
+			padding: 50px 0px;
 		}
 
 		.card {
 			width: 250px;
-			height: 200px;
+			height: 350px;
 			border-radius: 10px;
 			box-shadow: 0px 0px 15px -8px black;
 			display: flex;
 			flex-direction: column;
-			justify-content: space-around;
+			justify-content: center;
 			align-items: center;
-			padding: 20px;
-			transition: all 1s ease;
-
-			@include mobile-md {
-				height: 180px;
-				margin: 10px 0;
-			}
+			padding: 0px 20px;
+			margin-right: 50px;
 
 			@include mobile-sm {
+				width: 70%;
+				margin-right: 0px;
 				margin-bottom: 50px;
 			}
 
-			&.featured {
-				width: 250px;
-				height: 200px;
-				margin: 0 30px;
-
-				@include mobile-md {
-					width: 250px;
-					height: 180px;
-					margin: 1px;
-				}
-			}
+			transition: all 1s ease;
 
 			&:hover {
 				transform: scale(1.1);
 			}
-
-			.top {
+			.image {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-
+				height: 100px;
 				img {
-					&.left,
-					&.right {
-						height: 25px;
-					}
-					&.user {
-						height: 60px;
-						width: 60px;
-						border-radius: 50%;
-						object-fit: cover;
-						margin: 0 30px;
-
-						@include mobile-md {
-							width: 30px;
-							height: 30px;
-						}
-					}
+					height: 60px;
+					width: 60px;
+					border-radius: 50%;
+					object-fit: cover;
 				}
 			}
+		}
 
-			.center {
-				padding: 10px;
-				border-radius: 10px;
-				background-color: rgb(250, 244, 245);
+		.bottom {
+			padding: 20px;
+			background-color: $secondaryColor;
+			color: white;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 150px;
+		}
+		.top {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			justify-content: center;
+			height: 100px;
+			width: 100%;
+			padding: 20px;
 
-				@include mobile-md {
-					font-size: 12px;
-					padding: 5px;
-				}
+			h3 {
+				margin-bottom: 5px;
+				color: $primaryColor;
 			}
-			.bottom {
-				display: flex;
-				align-items: center;
-				flex-direction: column;
-				justify-content: center;
-
-				h3 {
-					margin-bottom: 5px;
-					color: $titleColor;
-
-					@include mobile-md {
-						font-size: 14px;
-					}
-				}
-				h4 {
-					color: $secondaryColor;
-					@include mobile-md {
-						font-size: 13px;
-					}
-				}
+			h4 {
+				font-weight: 400;
 			}
 		}
 	}

@@ -3,11 +3,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 90%;
 
 	@include mobile-sm {
 		flex-direction: column;
 		background-color: $secondaryBgColor;
 		padding: 70px 0px;
+		border-radius: 0px 0px 0px 150px;
 	}
 
 	.left {
@@ -29,6 +31,10 @@
 			justify-content: space-between;
 			height: 30vh;
 
+			@include mobile-md {
+				height: 40vh;
+			}
+
 			@include mobile-sm {
 				height: 100%;
 				width: 75%;
@@ -39,14 +45,13 @@
 			}
 
 			button {
+				border: none;
+				padding: 15px;
 				background-color: $primaryColor;
-				color: #fff;
-				display: flex;
-				flex-direction: row;
-				width: 100px;
-				justify-content: center;
-				align-items: center;
-				margin-top: 10px;
+				color: white;
+				font-weight: 500;
+				cursor: pointer;
+				align-items: flex-start;
 				transition: all 0.5s ease;
 
 				&:hover {
@@ -71,9 +76,10 @@
 
 		@include mobile-md {
 			flex: 3;
-			border-radius: unset;
 		}
-
+		@include mobile-sm {
+			border-radius: 0;
+		}
 		.right-container {
 			display: flex;
 			justify-content: space-between;

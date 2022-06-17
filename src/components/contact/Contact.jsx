@@ -22,7 +22,7 @@ const Contact = () => {
 			name: 'name',
 			placeholder: 'Name',
 			type: 'text',
-			label: 'Name',
+			label: 'Name *',
 			errorMessage: 'Name should be atleast 3 characters and no special characters',
 			required: true,
 			pattern: '[A-Za-z0-9]{3,16}$'
@@ -32,7 +32,7 @@ const Contact = () => {
 			name: 'e-mail',
 			placeholder: 'E-mail',
 			type: 'email',
-			label: 'E-mail',
+			label: 'E-mail *',
 			errorMessage: 'Invalid email address',
 			required: true,
 			pattern: '^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$'
@@ -40,9 +40,9 @@ const Contact = () => {
 		{
 			id: 3,
 			name: 'message',
-			placeholder: 'message',
+			placeholder: 'Tell me about your website? e.g goals,specific features , budget ...',
 			type: 'textarea',
-			label: 'Message',
+			label: 'Message *',
 			errorMessage: 'message should contain atleast 3 characters',
 			required: true,
 			pattern: '{3,16}$',
@@ -90,8 +90,8 @@ const Contact = () => {
 				</div>
 				<div className="c-right">
 					<p className="c-desc">
-						<b>What’s your story?</b> Get in touch. Always available for freelancing if the right project
-						comes along. me.
+						For inquiries or quotations please contact me by email at <b>molefe@mmwebdesign.co.za</b> or
+						fill out the form below.
 					</p>
 					<form ref={form} onSubmit={handleSubmit}>
 						{inputs.map(
@@ -114,7 +114,7 @@ const Contact = () => {
 								)
 						)}
 						<button>Submit</button>
-						{done && 'Thank you...'}
+						{done && <p className="done">Message sent successfully</p>}
 					</form>
 				</div>
 			</div>

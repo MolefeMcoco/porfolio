@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .a {
 	height: 100vh;
 	display: flex;
@@ -72,19 +74,27 @@
 
 .a-hire {
 	button {
+		border: none;
+		padding: 15px;
+		background-color: $primaryColor;
+		color: white;
+		font-weight: 500;
+		cursor: pointer;
+		align-items: flex-start;
 		transition: all 0.5s ease;
-		margin-top: 20px;
+		margin-top: 30px;
+
 		&:hover {
 			background-color: black;
 		}
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 	.a {
 		flex-direction: column;
 		text-align: center;
-		margin-top: 50px 0px;
+		margin: 50px 0px;
 	}
 
 	.a-left {
@@ -102,6 +112,8 @@
 
 	.a-right {
 		padding: 20px;
+		text-align: left;
+		margin-left: 10px;
 	}
 
 	.a-desc {
