@@ -1,7 +1,4 @@
 import './contact.scss';
-import Phone from '../../assets/phone.png';
-import Email from '../../assets/email.png';
-import Address from '../../assets/address.png';
 import FormInput from '../form-input/form-input.component';
 import TextArea from '../form-input/form-textArea';
 import React, { useState, useRef } from 'react';
@@ -75,15 +72,15 @@ const Contact = () => {
 					<h1 className="c-title">Let's discuss your project</h1>
 					<div className="c-info">
 						<div className="c-info-item">
-							<img src={Phone} alt="" className="c-icon" />
+							<img src="https://www.mmwebdesign.co.za/images/phone.png" alt="" className="c-icon" />
 							066266013
 						</div>
 						<div className="c-info-item">
-							<img className="c-icon" src={Email} alt="" />
+							<img className="c-icon" src="https://www.mmwebdesign.co.za/images/email.png" alt="" />
 							molefe@mmwebdesign.co.za
 						</div>
 						<div className="c-info-item">
-							<img className="c-icon" src={Address} alt="" />
+							<img className="c-icon" src="https://www.mmwebdesign.co.za/images/address.png" alt="" />
 							1056 Ngwenya Street, Heidelberg Gauteng 1441
 						</div>
 					</div>

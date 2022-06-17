@@ -1,6 +1,7 @@
 @import "./global.scss";
 .app {
 	height: 100vh;
+	position: relative;
 	@include mobile-sm {
 		height: 100%;
 	}
@@ -35,4 +36,18 @@
 			}
 		}
 	}
+}
+
+.whatsapp {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	background-color: $primaryColor;
+	color: #fff;
+	width: 2em !important;
+	height: 2em !important;
+	padding: 10px;
+	border-radius: 50%;
+	z-index: 5;
+	cursor: pointer;
 }

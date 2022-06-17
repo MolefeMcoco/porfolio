@@ -1,5 +1,4 @@
 import './about.scss';
-import Award from '../../assets/award.png';
 
 const About = () => {
 	return (
@@ -17,14 +16,13 @@ const About = () => {
 				<h1 className="a-title">About Me</h1>
 				<p className="a-sub">Hi this is Molefe Mcoco</p>
 				<p className="a-desc">
-					I'm a professional and highly skilled Web and Mobile App developer with more than 4 years of
-					experience in the field. i bring a range of skills from visual design, interaction design and UI. I
-					focus on creating user friendly design layouts and rich seamless experiences between the product and
-					the user.
+					I'm a professional and highly skilled Web developer with more than 4 years of experience in the
+					field. I bring a range of skills from visual design, interaction design and UI. I focus on creating
+					user friendly design layouts and rich seamless experiences between the product and the user.
 				</p>
 				<div className="a-award">
 					<a href="https://www.bark.com/en/za/company/mm-web-design/mDeP8/">
-						<img src={Award} alt="" className="a-award-img" />
+						<img src="https://www.mmwebdesign.co.za/images/award.png" alt="" className="a-award-img" />
 					</a>
 				</div>
 				<a href="#contact" className="a-hire">

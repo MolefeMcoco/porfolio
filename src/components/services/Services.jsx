@@ -14,7 +14,7 @@ const Services = () => {
 					<h1>Web Design</h1>
 					<p>
 						Easy to navigate professionally websites that represents your brand , showcases products or
-						services and encourage customers to contact you.
+						services and encourage customers to make a purchase.
 					</p>
 					<a href="#portfolio">
 						<button>Projects</button>
@@ -27,8 +27,7 @@ const Services = () => {
 						<img src={code} alt="" className="icon" />
 						<h3>Custom Coded</h3>
 						<p>
-							Unique custom coded websites which are SEO friend,faster , secure and complete control over
-							the functionality of the website.
+							Unique custom coded websites which are SEO friendly, faster , secure and full customizable.
 						</p>
 					</div>
 					<div className="item">
@@ -46,7 +45,7 @@ const Services = () => {
 							<img src={mobile} alt="" className="icon" />
 						</div>
 						<h3>Mobile friendly</h3>
-						<p>Responsive websites that are accesseble across all devices with web and Internet access.</p>
+						<p>Responsive websites that are accessible across all devices with web and Internet access.</p>
 					</div>
 					<div className="item">
 						<div className="icon-container">

@@ -8,11 +8,13 @@ import Contact from './components/contact/Contact';
 import Services from './components/services/Services';
 import Testimonials from './components/testimonials/Testimonials';
 import Faqs from './components/faq/faq';
+import { WhatsApp } from '@material-ui/icons';
 import './app.scss';
 function App() {
 	const [ menuOpen, setMenuOpen ] = useState(false);
 	return (
 		<div className="app">
+			<WhatsApp className="whatsapp" onClick={() => window.open('www.mmwebdesign.co.za', '_blank')} />
 			<Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 			<Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 			<div className="sections">

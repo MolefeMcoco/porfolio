@@ -1,13 +1,11 @@
 import './intro.scss';
-import man from '../../assets/man.png';
-import downArrow from '../../assets/down-arrow.png';
 
 const Intro = () => {
 	return (
 		<div className="intro" id="intro">
 			<div className="left">
 				<div className="imgContainer">
-					<img src={man} alt="" />
+					<img src="https://mmwebdesign.co.za/images/man.png" alt="" />
 				</div>
 			</div>
 			<div className="right">
@@ -15,11 +13,11 @@ const Intro = () => {
 					<h2>Hi There, I'm</h2>
 					<h1>Molefe Mcoco</h1>
 					<h3>
-						Freelance <span> Developer</span>
+						Freelance <span> Web Developer</span>
 					</h3>
 				</div>
 				<a href="#services">
-					<img src={downArrow} alt="" />
+					<img src="https://mmwebdesign.co.za/images/down-arrow.png" alt="" />
 				</a>
 			</div>
 		</div>

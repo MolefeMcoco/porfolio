@@ -1,7 +1,5 @@
 import './topbar.scss';
 import { Person, Mail } from '@material-ui/icons';
-import logo from '../../assets/logo.png';
-import LogoInverted from '../../assets/logo-inverted.png';
 
 const Topbar = ({ menuOpen, setMenuOpen }) => {
 	return (
@@ -9,7 +7,16 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
 			<div className="wrapper">
 				<div className="left">
 					<a href="#intro" className="logo">
-						<img src={menuOpen && 'active' ? LogoInverted : logo} alt="MM Web Design Logo" />
+						<img
+							src={
+								menuOpen && 'active' ? (
+									'https://mmwebdesign.co.za/images/logo-inverted.png'
+								) : (
+									'https://mmwebdesign.co.za/images/logo.png'
+								)
+							}
+							alt="MM Web Design Logo"
+						/>
 					</a>
 					<div className="itemContainer">
 						<Person className="icon" />
