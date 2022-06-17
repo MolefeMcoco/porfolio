@@ -39,13 +39,13 @@
 }
 
 .whatsapp {
-	position: absolute;
+	position: fixed;
 	right: 20px;
-	bottom: 20px;
+	bottom: 10px;
 	background-color: $primaryColor;
 	color: #fff;
-	width: 2em !important;
-	height: 2em !important;
+	width: 1em !important;
+	height: 1em !important;
 	padding: 10px;
 	border-radius: 50%;
 	z-index: 5;

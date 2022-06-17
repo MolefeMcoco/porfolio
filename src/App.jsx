@@ -14,7 +14,10 @@ function App() {
 	const [ menuOpen, setMenuOpen ] = useState(false);
 	return (
 		<div className="app">
-			<WhatsApp className="whatsapp" onClick={() => window.open('www.mmwebdesign.co.za', '_blank')} />
+			<WhatsApp
+				className="whatsapp"
+				onClick={() => window.open('https://api.whatsapp.com/send?phone=27662660513', '_blank')}
+			/>
 			<Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 			<Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 			<div className="sections">
