@@ -20,7 +20,7 @@ const Services = () => {
 			<div className="right">
 				<div className="right-container">
 					<div className="item">
-						<img src="https://www.mmwebdesign.co.za/image/code-solid.svg" alt="" className="icon" />
+						<img src="https://www.mmwebdesign.co.za/images/code-solid.svg" alt="" className="icon" />
 						<h3>Custom Coded</h3>
 						<p>
 							Unique custom coded websites which are SEO friendly, faster , secure and full customizable.
@@ -29,7 +29,7 @@ const Services = () => {
 					<div className="item">
 						<div className="icon-container">
 							<img
-								src="https://www.mmwebdesign.co.za/image/wordpress-brands.svg"
+								src="https://www.mmwebdesign.co.za/images/wordpress-brands.svg"
 								alt=""
 								className="icon"
 							/>
@@ -43,7 +43,7 @@ const Services = () => {
 					<div className="item">
 						<div className="icon-container">
 							<img
-								src="https://www.mmwebdesign.co.za/image/mobile-button-solid.svg"
+								src="https://www.mmwebdesign.co.za/images/mobile-button-solid.svg"
 								alt=""
 								className="icon"
 							/>
@@ -54,7 +54,7 @@ const Services = () => {
 					<div className="item">
 						<div className="icon-container">
 							<img
-								src="https://www.mmwebdesign.co.za/image/screwdriver-wrench-solid.svg"
+								src="https://www.mmwebdesign.co.za/images/screwdriver-wrench-solid.svg"
 								alt=""
 								className="icon"
 							/>
