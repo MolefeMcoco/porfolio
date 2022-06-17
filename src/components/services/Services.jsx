@@ -1,9 +1,5 @@
 import React from 'react';
 import './services.scss';
-import code from '../../assets/code-solid.svg';
-import wordpress from '../../assets/wordpress-brands.svg';
-import mobile from '../../assets/mobile-button-solid.svg';
-import tools from '../../assets/screwdriver-wrench-solid.svg';
 
 const Services = () => {
 	return (
@@ -24,7 +20,7 @@ const Services = () => {
 			<div className="right">
 				<div className="right-container">
 					<div className="item">
-						<img src={code} alt="" className="icon" />
+						<img src="https://www.mmwebdesign.co.za/image/code-solid.svg" alt="" className="icon" />
 						<h3>Custom Coded</h3>
 						<p>
 							Unique custom coded websites which are SEO friendly, faster , secure and full customizable.
@@ -32,7 +28,11 @@ const Services = () => {
 					</div>
 					<div className="item">
 						<div className="icon-container">
-							<img src={wordpress} alt="" className="icon" />
+							<img
+								src="https://www.mmwebdesign.co.za/image/wordpress-brands.svg"
+								alt=""
+								className="icon"
+							/>
 						</div>
 						<h3>Wordpress </h3>
 						<p>
@@ -42,14 +42,22 @@ const Services = () => {
 					</div>
 					<div className="item">
 						<div className="icon-container">
-							<img src={mobile} alt="" className="icon" />
+							<img
+								src="https://www.mmwebdesign.co.za/image/mobile-button-solid.svg"
+								alt=""
+								className="icon"
+							/>
 						</div>
 						<h3>Mobile friendly</h3>
 						<p>Responsive websites that are accessible across all devices with web and Internet access.</p>
 					</div>
 					<div className="item">
 						<div className="icon-container">
-							<img src={tools} alt="" className="icon" />
+							<img
+								src="https://www.mmwebdesign.co.za/image/screwdriver-wrench-solid.svg"
+								alt=""
+								className="icon"
+							/>
 						</div>
 						<h3>Website Maintenance </h3>
 						<p>
