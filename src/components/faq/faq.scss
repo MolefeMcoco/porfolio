@@ -26,6 +26,10 @@
 		display: flex;
 		flex: 1;
 		margin: 0px 20px 50px 20px;
+
+		@include mobile-xs {
+			width: 95%;
+		}
 	}
 }
 
@@ -47,7 +51,7 @@
 			.row-title {
 				border: solid 1px gray;
 
-				padding: 5px;
+				padding: 10px !important;
 				font-weight: 700;
 			}
 

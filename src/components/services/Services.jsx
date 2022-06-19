@@ -6,7 +6,6 @@ const Services = () => {
 		<div className="services" id="services">
 			<div className="left">
 				<div className="left-container">
-					<h3>What i do</h3>
 					<h1>Web Design</h1>
 					<p>
 						Easy to navigate professionally websites that represents your brand , showcases products or
@@ -23,7 +22,7 @@ const Services = () => {
 						<img src="https://www.mmwebdesign.co.za/images/code-solid.svg" alt="" className="icon" />
 						<h3>Custom Coded</h3>
 						<p>
-							Unique custom coded websites which are SEO friendly, faster , secure and full customizable.
+							Unique custom coded websites which are SEO friendly, faster , secure and fully customizable.
 						</p>
 					</div>
 					<div className="item">
